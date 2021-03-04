@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../../shared/shared.module';
 import { ProfileComponent } from './profile.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 
 export const routes = [
@@ -13,7 +12,6 @@ export const routes = [
       component: ProfileComponent,
       children:[
         { path: '', redirectTo: 'user-info', pathMatch: 'full'},
-        //{ path: 'projects', component: ProjectsComponent, data: { breadcrumb: 'Projects' } },
         { path: 'user-info', component: UserInfoComponent, data: { breadcrumb: 'User Information' } }
       ]
   }
@@ -22,7 +20,6 @@ export const routes = [
 @NgModule({
   declarations: [
     ProfileComponent, 
-    ProjectsComponent, 
     UserInfoComponent
   ],
   imports: [

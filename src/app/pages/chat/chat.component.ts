@@ -60,7 +60,6 @@ export class ChatComponent implements OnInit {
       logo: new FormControl(this.decoded.user.profile.image)
     });
 
-
     this.socket.on('newUserAdded', () => {
       this.auth.getAllUsers().subscribe((res: any[]) => {
         this.chats = this.listeCandidats = res.filter(obj => obj._id !== this.userId);

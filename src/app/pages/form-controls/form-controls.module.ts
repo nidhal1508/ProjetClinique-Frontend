@@ -4,15 +4,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { SharedModule } from '../../shared/shared.module';
-import { AutocompleteComponent } from './autocomplete/autocomplete.component';
-import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FormFieldComponent } from './form-field/form-field.component';
-import { InputComponent } from './input/input.component';
-import { RadioButtonComponent } from './radio-button/radio-button.component';
-import { SelectComponent } from './select/select.component';
-import { SliderComponent } from './slider/slider.component';
-import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { FilteringComponent } from './filtering/filtering.component';
 import { SortingComponent, } from './sorting/sorting.component';
 import { SmsSendComponent } from "./SmsSend/sms-send.component";
@@ -43,15 +36,8 @@ export const routes = [
     MatTableModule
   ],
   declarations: [
-    AutocompleteComponent, 
-    CheckboxComponent, 
     DatepickerComponent, 
     FormFieldComponent, 
-    InputComponent, 
-    RadioButtonComponent, 
-    SelectComponent, 
-    SliderComponent, 
-    SlideToggleComponent,
     FilteringComponent,
     SmsSendComponent,
     CongeComponent
