@@ -59,7 +59,6 @@ export class ChatComponent implements OnInit {
       candidat: new FormControl(this.decoded._id),
       logo: new FormControl(this.decoded.user.profile.image)
     });
-console.log("ghhhhhhhhhhhhhhh "+ this.messageForm.value.logo);
 
     this.socket.on('newUserAdded', () => {
       this.auth.getAllUsers().subscribe((res: any[]) => {
