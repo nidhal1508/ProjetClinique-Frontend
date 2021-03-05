@@ -3,6 +3,6 @@
   <p>are you sure you want to delete?</p>
 </div>
 <div mat-dialog-actions  class="w-100">
-  <button mat-button tabindex="1" [mat-dialog-close]="confirmButtonText" (click)="onConfirmClick()">{{confirmButtonText}}</button>
+  <button mat-button tabindex="1"  (click)="onConfirmClick()">{{confirmButtonText}}</button>
   <button mat-button (click)="onNoClick()" tabindex="-1">{{cancelButtonText}}</button>
 </div>

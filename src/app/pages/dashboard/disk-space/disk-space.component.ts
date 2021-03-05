@@ -24,9 +24,9 @@ export class DiskSpaceComponent implements OnInit {
     this.data = disk_space;  
   }
   
-  // public onSelect(event) {
-  //   console.log(event);
-  // }
+  public onSelect(event) {
+    console.log(event);
+  }
 
   ngAfterViewChecked() {    
     if(this.previousWidthOfResizedDiv != this.resizedDiv.nativeElement.clientWidth){

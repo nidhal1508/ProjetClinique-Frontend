@@ -30,9 +30,9 @@ export class AnalyticsComponent implements OnInit {
     this.analytics = analytics; 
   }
 
-  // onSelect(event) {
-  //   console.log(event);
-  // }
+  onSelect(event) {
+    console.log(event);
+  }
 
   ngAfterViewChecked() {    
     if(this.previousWidthOfResizedDiv != this.resizedDiv.nativeElement.clientWidth){
